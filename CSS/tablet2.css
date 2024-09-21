@@ -1,0 +1,277 @@
+/* Responsive CSS for Tablet */
+
+/* Basic HTML for responsive behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Center class for text-align center */
+.center {
+    text-align: center;
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: visible;
+    font-family: 'Exo 2', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#logo {
+    margin: 10px 10px;
+}
+
+#image {
+    height: 60px;
+    width: 60px;
+    margin: 5px 10px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+    display: flex;
+    margin-right: 40px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: underline 2px;
+    padding: 12px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    margin-left: 3px;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 520px;
+    padding: 12px 50px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+                url("https://png.pngtree.com/thumb_back/fh260/20170803/pngtree-Food-Menu-Fare-Meal-background-photo-869492.jpg") no-repeat center center/cover;
+    background-size: cover;
+}
+
+#home h1 {
+    color: white;
+    font-family: 'Bree Serif', serif;
+    text-shadow: 2px 2px 4px black;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    padding: 2px 12px;
+    font-size: 1.5rem;
+}
+
+/* Services Section */
+#services-container {
+    background-color: #023234;
+    padding: 20px;
+    height: 1500px;
+}
+
+
+
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#services .box {
+    border-radius: 15px;
+    background-color: #fafafa;
+    padding: 20px;
+    margin: 15px 0;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+#services .box img {
+    margin: auto;
+    height: 120px;
+}
+
+#services .box p {
+    background-color: #7e9a9a;
+    padding: 20px;
+    color: white;
+    font-family: monospace;
+}
+
+/* Clients Section */
+#clientsection {
+    padding: 0px 20px 0px 20px;
+    background-color: #f4f4f4;
+    position: relative;
+    margin: 0px;
+}
+
+#clientsection::before{
+    height: 100%;
+    left: 0px;
+    border-radius: 0px;
+}
+
+#clientsection h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+}
+
+#clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+#clients .client-items {
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#clients .client-items img {
+    width: 80px;
+}
+
+#clients .client-items:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px 0px 20px;
+    background-color: #f5f5f5;
+    position: relative;
+    height: 870px;
+    overflow: hidden;
+}
+
+#contact::before{
+    height: 100%;
+    overflow: hidden;
+}
+
+#contact h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+#contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#contact-box input, #contact-box textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 9px;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#contact-box input:focus, #contact-box textarea:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+#contact-box #button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+#contact-box #button:hover {
+    background-color: #333;
+    transform: scale(1.1);
+}
+
+/* Footer */
+#footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #home {
+        padding: 12px 100px;
+    }
+
+    #home h1 {
+        font-size: 3rem;
+    }
+
+    #services .box {
+        width: 90%;
+    }
+
+    #clients {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #clients .client-items {
+        width: auto;
+        padding: 25px;
+    }
+
+    #contact-box form {
+        width: 80%;
+    }
+}

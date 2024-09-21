@@ -1,0 +1,93 @@
+/* Navigation Section */
+#logo{
+    margin-left: 30px;
+}
+/* #navbar{
+flex-direction: column;
+} */
+#navbar ul li {
+font-size: 1.3rem;
+}
+#navbar ul li a{
+ padding: 12px 25px;
+}
+/* Home Section */
+#home {
+height: 500px;
+padding: 12px 90px;
+}
+
+#home p{
+font-size: 15px;
+}
+#home h1{
+font-size: 40px;
+}
+.btn{
+margin: 0px 10px;
+margin-top: 25px;
+padding: 5px 10px;
+font-size: 1.1rem;
+}
+/* Services Section */
+#services{
+flex-direction: column;
+}
+#services .box{
+margin: 5px 12px;
+padding: 15px
+}
+#services .box h1{
+font-size: 1.5rem;
+padding: 12px;
+}
+#services .box p{
+font-size: 0.9rem;
+}
+
+#services-container{
+    height: 1500px;
+}
+
+#services-container h1{
+font-size: 2.2rem;
+padding: 0px 30px
+}
+/* Client Section */
+#clientsection h1{
+font-size: 2.2rem;
+}
+#clientsection::before{
+height: 500px;
+}
+#clients{
+flex-wrap: wrap;
+padding: 0px;
+}
+#clients .client-items {
+padding: 35px;
+}
+#clients .client-items img {
+width: 60px;
+}
+#clientsection {
+    height: 500px;
+}
+/* Contact - Section  */
+#contact{
+/* height: 325px; */
+margin-top: 24px;
+}
+#contact h1{
+font-size: 2.3rem;
+}
+#contact-box form {
+width: 530px;
+}
+#contact-box label {
+font-size: 1.1rem;
+}
+#contact-box #button {
+width: 538px;
+border-radius: 12px;
+}

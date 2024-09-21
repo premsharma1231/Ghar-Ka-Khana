@@ -1,0 +1,378 @@
+/* We only can make any-thing center at the time of execution by using margin auto , then first of all we have to give the display block and  */
+/* Basic HTML for responsive ness */
+html {
+    scroll-behavior: smooth;
+}
+
+/* This is the center class to make the text-align center for the center class */
+.center {
+    text-align: center;
+}
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: visible; 
+}
+
+/* Navigation-Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(0, 0, 0);
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar : Logo and Image */
+
+#logo {
+    margin: 10px 10px;
+    margin-left: 35px;
+}
+
+#image {
+    margin: 5px 10px;
+    height: 60px;
+    width: 60px;
+}
+
+
+/* Navigation Bar : List-Styling */
+
+#navbar ul {
+    display: flex;
+    margin-bottom: 0px;
+    margin-right: 40px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    color: rgb(255, 255, 255);
+    /* display: block; */
+    text-decoration: underline 2px;
+    text-underline-offset: 3px;
+    border-radius: 20px;
+    padding: 12px 15px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    transition: all 1s;
+    margin-left: 3px;
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+
+
+/* Home - Section */
+#home::before {
+    content: "";
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("https://png.pngtree.com/thumb_back/fh260/20170803/pngtree-Food-Menu-Fare-Meal-background-photo-869492.jpg") no-repeat center center/cover;
+    opacity: 0.8;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    overflow: hidden;
+}
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 520px;
+    padding: 12px 200px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+#home h1 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    padding: 2px 12px;
+    font-size: 1.5rem;
+}
+
+.btn {
+    margin: 0px;
+    width: 140px;
+    height: 50px;
+    font-size: large;
+    font-family: fantasy;
+    letter-spacing: 2px;
+}
+
+/* .btn:hover {
+    color: white;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+} */
+
+/* Services - Section */
+#services-container{
+    margin-top: 0px;
+    background-color: #023234;
+    height: 850px;
+}
+
+#services {
+    display: flex;
+    margin: 30px 12px;
+}
+
+#services .box {
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    padding: 20px 0px 0px 0px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+#services .box:hover{
+    transform: translateY(-10px);
+    background-color: #f44336;
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    height: 160px;
+}
+
+#services .box p {
+    font-family: monospace;
+    background-color:  #7e9a9a;
+    padding: 20px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    color: white;
+}
+
+#services-container #section-h1 {
+    margin: 0px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px black;
+    padding-top: 50px;
+}
+
+#services h1 {
+    font-family: 'Bree Serif', serif;
+}
+
+/* Client - Section */
+#clientsection {
+    height: 650px;
+    margin-top: -7rem;
+    position: relative;
+    z-index: 5;
+}
+
+#clientsection h1{
+    position: absolute;
+    top: 120px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%); /* Centers the div both horizontally and vertically */
+    text-align: center;
+}
+
+#clientsection::before {
+    content: "";
+    position: absolute;
+    background: url("../foodbackground.jpg") no-repeat center center/cover;
+    margin: 0px;
+    padding: 0px;
+    z-index: -1;
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    /* box-shadow: inset #ffffff 0px -20px 20px 20px; */
+}
+
+
+
+#clients {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content:space-around;
+    width: 100%;
+}
+
+#clients .client-items img {
+    width: 100px;
+}
+
+#clients .client-items {
+    padding: 35px;
+    transition: all 0.3s;
+    background-color: white;
+    border-radius: 50%;
+    border: black solid 0px;
+    box-shadow: inset gray 1px 1px 20px 20px;
+}
+#clients .client-items:hover {
+    transform: scale(1.2) rotate(5deg); /* Scale up and rotate on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}
+
+/* Contact - Section */
+#contact::before {
+    content: "";
+    position: absolute;
+    background: url("https://st2.depositphotos.com/1265075/7826/i/450/depositphotos_78262052-stock-photo-contact-us-icons-web-connection.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 635px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#contact{
+    /* border-top: 12px solid black; */
+    height: 600px;
+    /* box-shadow: inset white 0px 20px 20px 20px; */
+    
+}
+
+
+
+
+#contact h1{
+    margin-top: 0px;
+    padding: 50px 30px;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 50px;
+    padding: 10px 25px;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Hidden initially */
+    animation: fadeIn 1.5s forwards ease-in-out; /* Smooth fade-in effect */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+#contact-box input,
+#contact-box textarea {
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.2rem;
+    border-radius: 9px;
+    font-family: 'Exo 2', sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for focus state */
+}
+
+#contact-box input:focus,
+#contact-box textarea:focus {
+    transform: scale(1.05); /* Slightly enlarge input fields when focused */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Add glowing shadow on focus */
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact-box form {
+    width: 600px;
+}
+
+#contact-box #button {
+    margin: 12px 0px;
+    width: 610px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    padding: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth button animation */
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    height: 50px;
+}
+
+#contact-box #button:hover {
+    background-color: #333; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge button */
+    cursor: pointer;
+}
+
+/* Utility Classes */
+
+.h-seacondary {
+    font-size: 1.3rem;
+    padding: 12px 25px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+
+.h-primary {
+    font-size: 3.2rem;
+    padding: 0px 30px;
+    font-family: 'Bree Serif', serif;
+}
