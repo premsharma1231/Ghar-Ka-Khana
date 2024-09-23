@@ -4,12 +4,13 @@
 }
 #image{
     margin: 0px;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
 }
 
 #navbar{
     flex-direction: column;
+    height: 120px;
 }
 #navbar ul {
     display: flex;
@@ -27,11 +28,11 @@
 }
 /* Home Section */
 #home {
-    height: 420px;
+    height: 600px;
     padding: 12px 15px;
 }
 #home::before{
-    height: 500px;
+    height: 100%;
 }
 #home p{
     font-size: 14px;
@@ -49,8 +50,8 @@
     flex-direction: column;
 }
 #services .box{
-    margin: 5px 12px;
-    padding: 15px;
+    margin: 15px 12px;
+    padding: 15px 0px;
     width: 300px;
 }
 #services .box h1{
