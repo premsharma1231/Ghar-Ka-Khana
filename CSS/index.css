@@ -142,6 +142,9 @@ body{
     font-size: large;
     font-family: fantasy;
     letter-spacing: 2px;
+    font-size: 1.1rem;
+    color: whitesmoke;
+    font-weight: bold;
 }
 
 /* .btn:hover {
@@ -251,14 +254,15 @@ body{
     position: absolute;
     top: -25px;
     text-align: center;
-    background-color: black;
+    background-color: rgb(68, 67, 67);
     border-radius: 12px;
     left: 50%;
     transform: translate(-50%); /* Centers the div both horizontally and vertically */
     text-align: center;
     font-size: 3.5rem;
     /* animation: glowText2 1.5s infinite ease-in-out; */
-    color:white;
+    color:rgb(182, 182, 182);
+    text-shadow: #000000 6px 4px;
 }
 
 
@@ -294,10 +298,10 @@ body{
 #clients .client-items {
     padding: 20px;
     transition: all 0.3s;
-    background-color: white;
+    background-color: rgb(68, 67, 67);
     border-radius: 50%;
     border: black solid 0px;
-    /* box-shadow: #484848 0px 0px 20px 20px; */
+    box-shadow: #484848 0px 0px 20px 20px;
 }
 #clients .client-items:hover {
     transform: scale(1.2); /* Scale up and rotate on hover */
