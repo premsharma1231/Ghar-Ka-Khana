@@ -1,9 +1,23 @@
 /* Navigation Section */
 #logo{
-        margin-left: 0px;
+        padding: 5px 10px;
 }
+#image{
+    margin: 0px;
+    width: 40px;
+    height: 40px;
+}
+
 #navbar{
     flex-direction: column;
+}
+#navbar ul {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding: 0px 0px 10px 0px;
 }
 #navbar ul li {
     font-size: 0.8rem;
@@ -13,17 +27,17 @@
 }
 /* Home Section */
 #home {
-    height: 335px;
+    height: 420px;
     padding: 12px 15px;
 }
 #home::before{
     height: 500px;
 }
 #home p{
-    font-size: 15px;
+    font-size: 14px;
 }
 #home h1{
-    font-size: 35px;
+    font-size: 30px;
 }
 .btn{
     margin: 10px 10px;
@@ -52,25 +66,30 @@
 }
 
 #services-container {
-    height: 850px;
+    height: 1850px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 /* Client Section */
-#clientsection h1{
-    font-size: 2.2rem;
+#clientsection{
+    height: 350px;
 }
-#clientsection::before{
-    height: 325px;
+
+#clientsection h1{
+    font-size: 1.5rem;
+    padding: 12px 20px;
 }
 #clients{
     flex-wrap: wrap;
-    padding: 0px;
+    padding: 0px 45px;
+    top: 20px;
+    justify-content: space-between;
 }
 #clients .client-items {
-    padding: 35px;
+    padding:20px;
+    margin-top: 40px;
 }
 #clients .client-items img {
     width: 60px;
@@ -78,7 +97,7 @@
 /* Contact - Section  */
 #contact{
     /* height: 325px; */
-    margin-top: 24px;
+    margin-top: 0px;
 }
 #contact h1{
     font-size: 2.3rem;
@@ -90,6 +109,6 @@
     font-size: 1.1rem;
 }
 #contact-box #button {
-    width: 257px;
+    width: 253px;
     border-radius: 12px;
 }
