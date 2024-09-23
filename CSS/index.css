@@ -16,7 +16,8 @@ html {
 }
 
 body{
-    overflow: visible; 
+    overflow: visible;
+    background-color: rgb(80, 80, 80);;
 }
 
 /* Navigation-Bar */
@@ -45,8 +46,9 @@ body{
 /* Navigation Bar : Logo and Image */
 
 #logo {
-    margin: 10px 10px;
-    margin-left: 35px;
+    padding: 10px 10px;
+    padding-left: 35px;
+    background-color: white;
 }
 
 #image {
@@ -92,7 +94,7 @@ body{
 /* Home - Section */
 #home::before {
     content: "";
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("https://png.pngtree.com/thumb_back/fh260/20170803/pngtree-Food-Menu-Fare-Meal-background-photo-869492.jpg") no-repeat center center/cover;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url("../Images/background.jpg") no-repeat center center/cover;
     opacity: 0.8;
     position: absolute;
     top: 0px;
@@ -122,6 +124,7 @@ body{
     color: white;
     font-family: 'Bree Serif', serif;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    animation: glowText2 1.5s infinite ease-in-out;
 }
 
 #home p {
@@ -151,7 +154,7 @@ body{
 #services-container{
     margin-top: 0px;
     background-color: #023234;
-    height: 850px;
+    height: 700px;
 }
 
 #services {
@@ -160,20 +163,48 @@ body{
 }
 
 #services .box {
-    border: 2px solid black;
     border-radius: 25px;
-    background-color: #fafafa;
-    border: 1px solid #ddd;
+    background-color: rgb(196, 196, 196);
+    border: 0px solid #ddd;
     padding: 20px 0px 0px 0px;
     margin: 15px;
     text-align: center;
-    border-radius: 15px;
     transition: all 0.3s;
+    /* border: 2px solid transparent; */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 
+                0 2px 5px rgba(0, 0, 0, 0.2);
+                transition: all 0.3s ease; 
+    /* animation: rotateBorder 2s linear infinite;  */
 }
+
+
+
+@keyframes rotateBorder {
+    0% {
+        border-image: linear-gradient(45deg, #ff7f50, #ff6347) 1;
+    }
+    25% {
+        border-image: linear-gradient(135deg, #ff6347, #ff4500) 1;
+    }
+    50% {
+        border-image: linear-gradient(225deg, #ff4500, #ff1493) 1;
+    }
+    75% {
+        border-image: linear-gradient(315deg, #ff1493, #ff69b4) 1;
+    }
+    100% {
+        border-image: linear-gradient(405deg, #ff69b4, #ff7f50) 1;
+    }
+}
+
 
 #services .box:hover{
     transform: translateY(-10px);
     background-color: #f44336;
+    border-color: black;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 
+                0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 #services .box img {
@@ -183,13 +214,16 @@ body{
 }
 
 #services .box p {
-    font-family: monospace;
-    background-color:  #7e9a9a;
+    font-family: Helvetica;
+    background-color:  rgb(54, 54, 54);
     padding: 20px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    color: white;
+    color: #ecf0f1;
+    text-align: left;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    /* animation: rotateBorder 2s linear infinite; */
 }
+
 
 #services-container #section-h1 {
     margin: 0px;
@@ -200,84 +234,106 @@ body{
 
 #services h1 {
     font-family: 'Bree Serif', serif;
+    color: white;
+    animation: glowText2 1.5s infinite ease-in-out;
 }
 
 /* Client - Section */
 #clientsection {
-    height: 650px;
-    margin-top: -7rem;
+    height: 400px;
+    margin-top: 0rem;
     position: relative;
     z-index: 5;
+    background-color: #333;
 }
 
 #clientsection h1{
     position: absolute;
-    top: 120px;
+    top: -25px;
     text-align: center;
+    background-color: black;
+    border-radius: 12px;
     left: 50%;
     transform: translate(-50%); /* Centers the div both horizontally and vertically */
     text-align: center;
+    font-size: 3.5rem;
+    /* animation: glowText2 1.5s infinite ease-in-out; */
+    color:white;
 }
 
-#clientsection::before {
-    content: "";
-    position: absolute;
-    background: url("../foodbackground.jpg") no-repeat center center/cover;
-    margin: 0px;
-    padding: 0px;
-    z-index: -1;
-    opacity: 1;
-    height: 100%;
-    width: 100%;
-    border-top-left-radius: 120px;
-    border-top-right-radius: 120px;
-    /* box-shadow: inset #ffffff 0px -20px 20px 20px; */
-}
 
+@keyframes glowText2 {
+    0% {
+        transform: scale(1); /* Default scale */
+        text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black;
+    }
+    50% {
+        transform: scale(1.1); /* Slightly larger scale */
+        text-shadow: 0 0 20px black, 0 0 30px black, 0 0 40px black, 0 0 50px black;
+    }
+    100% {
+        transform: scale(1); /* Back to original scale */
+        text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px black;
+    }
+}
 
 
 #clients {
     display: flex;
     align-items: center;
     position: absolute;
-    top: 250px;
+    top: 140px;
     left: 50%;
     transform: translateX(-50%);
-    justify-content:space-around;
+    justify-content: space-evenly;
     width: 100%;
 }
 
-#clients .client-items img {
-    width: 100px;
-}
+
 
 #clients .client-items {
-    padding: 35px;
+    padding: 20px;
     transition: all 0.3s;
     background-color: white;
     border-radius: 50%;
     border: black solid 0px;
-    box-shadow: inset gray 1px 1px 20px 20px;
+    /* box-shadow: #484848 0px 0px 20px 20px; */
 }
 #clients .client-items:hover {
-    transform: scale(1.2) rotate(5deg); /* Scale up and rotate on hover */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    transform: scale(1.2); /* Scale up and rotate on hover */
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); Add a shadow effect */
 }
+
+.client-items img{
+    width: 100px;
+}
+
+#microsoft{
+    width: 90px;
+    padding: 5px;
+}
+
+/* apple
+microsoft
+facebook
+skype */
+
+
 
 /* Contact - Section */
 #contact::before {
     content: "";
     position: absolute;
-    background: url("https://st2.depositphotos.com/1265075/7826/i/450/depositphotos_78262052-stock-photo-contact-us-icons-web-connection.jpg") no-repeat center center/cover;
+    background: url("../Images/298_Abstract_background.jpg") no-repeat center center/cover;
     width: 100%;
-    height: 635px;
+    height: 637px;
     z-index: -1;
-    opacity: 0.3;
+    opacity: 1;
 }
 
 #contact{
     /* border-top: 12px solid black; */
-    height: 600px;
+    height: 586px;
     /* box-shadow: inset white 0px 20px 20px 20px; */
     
 }
@@ -287,7 +343,25 @@ body{
 
 #contact h1{
     margin-top: 0px;
-    padding: 50px 30px;
+    padding: 50px 30px 20px 30px;
+    font-size: 4rem;
+    color: #023234;
+    animation: glowText 1.5s infinite ease-in-out; 
+}
+
+@keyframes glowText {
+    0% {
+        transform: scale(1); /* Default scale */
+        text-shadow: 0 0 10px #ff5722, 0 0 20px #ff5722, 0 0 30px #ff5722, 0 0 40px #ff5722;
+    }
+    50% {
+        transform: scale(1.1); /* Slightly larger scale */
+        text-shadow: 0 0 20px #ff5722, 0 0 30px #ff5722, 0 0 40px #ff5722, 0 0 50px #ff5722;
+    }
+    100% {
+        transform: scale(1); /* Back to original scale */
+        text-shadow: 0 0 10px #ff5722, 0 0 20px #ff5722, 0 0 30px #ff5722, 0 0 40px #ff5722;
+    }
 }
 
 #footer {
@@ -320,9 +394,10 @@ body{
 #contact-box textarea {
     font-size: 1rem;
     width: 100%;
-    padding: 0.2rem;
+    padding: 10px;
     border-radius: 9px;
     font-family: 'Exo 2', sans-serif;
+    border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation for focus state */
 }
 
@@ -334,6 +409,7 @@ body{
 
 #contact-box label {
     font-size: 1.3rem;
+    color: black;
     font-family: 'Bree Serif', serif;
 }
 
@@ -343,7 +419,7 @@ body{
 
 #contact-box #button {
     margin: 12px 0px;
-    width: 610px;
+    width: 600px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     font-size: 1.1rem;

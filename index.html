@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Online Food Delivery Services in India | gharkakhana.com</title>
-    <link rel="stylesheet" href="../CSS/index.css">
-    <link rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 425px)" href="../CSS/phone.css">
-    <link rel="stylesheet" media="screen and (min-width: 426px) and (max-width: 767px)" href="../CSS/tablet2.css">  
-    <link rel="stylesheet" media="screen and (min-width:768px) and (max-width: 1145px)" href="../CSS/laptopsmall.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 425px)" href="./CSS/phone.css">
+    <link rel="stylesheet" media="screen and (min-width: 426px) and (max-width: 767px)" href="./CSS/tablet2.css">  
+    <link rel="stylesheet" media="screen and (min-width:768px) and (max-width: 1145px)" href="./CSS/laptopsmall.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=Dancing+Script&family=Gabarito:wght@600&family=Handjet:wght@100&family=Onest:wght@100&family=Tajawal:wght@300&family=Ubuntu:wght@300&display=swap"
         rel="stylesheet">
@@ -22,7 +23,7 @@
 <body>
     <nav id="navbar">
         <div id="logo">
-            <a href="https://google.com" target="_blank"><img src="../logo-2.png" alt="" id="image"></a>
+            <a href="https://google.com" target="_blank"><img src="./Images/home.png" alt="" id="image"></a>
         </div>
 
         <ul>
@@ -50,31 +51,25 @@
         </div>
         <div id="services">
             <div class="box">
-                <img src="../11.png" alt="gharkakhana.com">
+                <img src="./Images/11.png" alt="gharkakhana.com">
                 <h1 class="h-seacondary center">
                     Food - Ordering
                 </h1>
-                <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores omnis quidem, ab
-                    et quibusdam laborum in, alias totam accusantium maiores possimus, consectetur ratione ea ullam Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus aliquid corrupti.
-                    optio quos nulla fugit eius vitae a animi ipsum.</p>
+                <p class="center">Food ordering has revolutionized the way we enjoy meals, offering convenience and variety at our fingertips. With just a few clicks, customers can explore diverse cuisines, customize orders, and have meals delivered to their doorstep. This growing trend saves time, enhances convenience, and satisfies cravings instantly. So please visit website and stay connected.</p>
             </div>
             <div class="box">
-                <img src="../1.png" alt="gharkakhana.com">
+                <img src="./Images/1.png" alt="gharkakhana.com">
                 <h1 class="h-seacondary center">
                     Food - Catering
                 </h1>
-                <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores omnis quidem, ab
-                    et quibusdam laborum in, alias totam accusantium maiores possimus, consectetur ratione ea ullam Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus aliquid corrupti.
-                    optio quos nulla fugit eius vitae a animi ipsum.</p>
+                <p class="center">Food catering provides tailored meal services for events, gatherings, and special occasions. Catering ensures guests enjoy delicious, well-prepared dishes without the hassle of cooking. From corporate meetings to weddings, catering offers diverse menu options, personalized to meet dietary needs and preferences. It's essential for seamless, stress-free event planning.</p>
             </div>
             <div class="box">
-                <img src="../deliverypartenerlogo.png" alt="gharkakhana.com">
+                <img src="./Images/deliverypartenerlogo.png" alt="gharkakhana.com">
                 <h1 class="h-seacondary center">
                     Bulk - Ordering
                 </h1>
-                <p class="center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores omnis quidem, ab
-                    et quibusdam laborum in, alias totam accusantium maiores possimus, consectetur ratione ea ullam Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus aliquid corrupti.
-                    optio quos nulla fugit eius vitae a animi ipsum.</p>
+                <p class="center">Bulk ordering involves purchasing large quantities of products, often at discounted rates. Commonly used by businesses, organizations, or events, bulk ordering is cost-effective for meeting high demand. It streamlines procurement, reduces per-unit costs, and ensures a steady supply of goods. Bulk orders are ideal for catering, retail, and large-scale operations.</p>
             </div>
         </div>
 
@@ -83,18 +78,18 @@
         <h1 class="h-primary center">
             Our _ Clients
         </h1>
-        <div id="clients">
+        <div id="clients" aos="fade-up" aos-easing="ease-out-cubic" aos-duration="1000">
             <div class="client-items" id="apple" >
-                <img src="../NEWAPPLE.png" alt="ourclient">
+                <img src="./Images/NEWAPPLE.png" alt="ourclient" id="apple">
             </div>
             <div class="client-items"  >
-                <img src="../NEWMSC.png" alt="ourclient" id="microsoft">
+                <img src="./Images/dark microsoft.png" alt="ourclient" id="microsoft">
             </div>
             <div class="client-items" id="facebook" >
-                <img src="../HPICONNEW.png" alt="ourclient">
+                <img src="./Images/HPICONNEW.png" alt="ourclient" id="facebook">
             </div>
             <div class="client-items" id="skype" >
-                <img src="../NEWSKYPE.png" alt="ourclient">
+                <img src="./Images/NEWSKYPE.png" alt="ourclient" id="skype">
             </div>
         </div>
     </section>
@@ -134,5 +129,9 @@
         </div>
         <hr>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
