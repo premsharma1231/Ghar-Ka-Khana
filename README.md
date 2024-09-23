@@ -4,7 +4,8 @@ Welcome to **Ghar Ka Khana** — a simple yet delightful food delivery platform 
 
 🔗 [Live Demo](https://premsharma1231.github.io/Ghar-Ka-Khana/)
 
-![Ghar Ka Khana Banner](https://via.placeholder.com/1200x400?text=Ghar+Ka+Khana) <!-- Add your banner image link -->
+![Ghar Ka Khana Banner](![Uploading image.png…]()
+) <!-- Add your banner image link -->
 
 ---
 
