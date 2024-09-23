@@ -42,7 +42,7 @@ Our goal is to create a platform that:
 
 ### Homepage
 
-![Homepage Screenshot](https://via.placeholder.com/800x400?text=Homepage+Screenshot) <!-- Add your screenshot link -->
+![Homepage Screenshot]() <!-- Add your screenshot link -->
 
 ---
 
