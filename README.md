@@ -42,7 +42,7 @@ Our goal is to create a platform that:
 
 ### Homepage
 
-![Homepage Screenshot]() <!-- Add your screenshot link -->
+![Homepage Screenshot](https://github.com/premsharma1231/Ghar-Ka-Khana/blob/main/Screenshot%20(140).png) <!-- Add your screenshot link -->
 
 ---
 
