@@ -38,7 +38,7 @@ body{
     width: 100%;
     top: 0px;
     left: 0px;
-    background-color: rgb(0, 0, 0);
+    background-color: #1A3636;
     z-index: -1;
     opacity: 0.7;
 }
@@ -80,13 +80,13 @@ body{
     padding: 12px 15px;
     font-family: 'Exo 2', sans-serif;
     font-weight: bold;
-    transition: all 1s;
+    transition: all 0.3s;
     margin-left: 3px;
 }
 
 #navbar ul li a:hover {
-    color: rgb(0, 0, 0);
-    background-color: white;
+    color: white;
+    background-color: #40534C;
 }
 
 
@@ -157,7 +157,7 @@ body{
 /* Services - Section */
 #services-container{
     margin-top: 0px;
-    background-color: #023234;
+    background-color: #1A3636;
     height: 700px;
 }
 
@@ -168,7 +168,7 @@ body{
 
 #services .box {
     border-radius: 25px;
-    background-color: rgb(196, 196, 196);
+    background-color: #677D6A;
     border: 0px solid #ddd;
     padding: 20px 0px 0px 0px;
     margin: 15px;
@@ -183,7 +183,7 @@ body{
 
 #services .box:hover{
     transform: translateY(-10px);
-    background-color: #f44336;
+    background-color: #D6BD98;
     border-color: black;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 
                 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -208,7 +208,7 @@ body{
 
 #services-container #section-h1 {
     margin: 0px;
-    color: rgb(0, 0, 0);
+    color: #D6BD98;
     text-shadow: 2px 2px 4px black;
     padding-top: 50px;
 }
@@ -225,7 +225,7 @@ body{
     margin-top: 0rem;
     position: relative;
     z-index: 5;
-    background-color: #333;
+    background-color: #677D6A;
 }
 
 #clientsection h1{
@@ -258,13 +258,15 @@ body{
 #clients .client-items {
     padding: 20px;
     transition: all 0.3s;
-    background-color: rgb(68, 67, 67);
+    background-color: #40534C;
     border-radius: 50%;
     border: black solid 0px;
-    box-shadow: #484848 0px 0px 20px 20px;
+    box-shadow: #484848 0px 0px 20px 6px;
 }
 #clients .client-items:hover {
     transform: scale(1.2);
+    box-shadow: #ffdeab 0px 0px 20px 6px;
+    background-color: #D6BD98;
 }
 
 .client-items img{
@@ -273,18 +275,18 @@ body{
 
 #microsoft{
     width: 90px;
-    padding: 5px;
+    padding: 10px;
 }
 
 /* Contact - Section */
 #contact::before {
     content: "";
     position: absolute;
-    background: url("../Images/ContactBGCompressed.png") no-repeat center center/cover;
+    background: url("../Images/pexels-valeriya-1639562.jpg") no-repeat center center/cover;
     width: 100%;
     height: 637px;
     z-index: -1;
-    opacity: 1;
+    opacity: 0.8;
 }
 #contact{
     height: 586px;
@@ -352,11 +354,11 @@ body{
     width: 600px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: 5px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    background-color: #ff5722;
-    color: white;
+    background-color: #D6BD98;
+    color: black;
     border: none;
     border-radius: 5px; 
     height: 50px;
