@@ -1,134 +1,30 @@
-<<<<<<< HEAD
-🍽️ Ghar Ka Khana
-Welcome to Ghar Ka Khana — a simple yet delightful food delivery platform offering the warmth and authenticity of home-cooked meals. Our mission is to connect people with the taste of home-cooked food, bringing love and care to every bite.
-
-🔗 Live Demo
-
-
-
-✨ Features
-Delicious Home-Cooked Meals: Enjoy authentic home-style cooking prepared with fresh ingredients.
-User-Friendly Design: Easy to navigate and pleasant to explore, with a sleek and modern interface.
-Animations & Interactions: Smooth animations and transitions make browsing a delightful experience.
-Responsive Design: Fully optimized for all screen sizes—whether you're on a phone, tablet, or desktop.
-Fast & Secure: Built with performance and security in mind to ensure a seamless experience.
-🚀 Technologies Used
-HTML5: For building the structure of the website.
-CSS3: Enhanced with responsive design and eye-catching animations.
-JavaScript: Bringing the website to life with dynamic interactions.
-GSAP (GreenSock Animation Platform): Ensuring smooth and optimized animations.
-GitHub Pages: Hosting the website for free with easy deployment.
-🎯 Purpose
-Our goal is to create a platform that:
-
-Brings comfort food closer to people.
-Supports local chefs and home cooks.
-Promotes healthier and fresher meal options.
-📸 Preview
-Homepage
-<!-- Add your screenshot link -->
-
-🛠️ Installation & Setup
-If you want to explore the code or run the project locally, follow these steps:
-
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/premsharma1231/Ghar-Ka-Khana.git
-Navigate to the project directory:
-bash
-Copy code
-cd Ghar-Ka-Khana
-Open index.html in your browser to view the website.
-📦 Optimizing for Performance
-We’re continuously working to improve the performance of Ghar Ka Khana, especially around images and animations. Here are some strategies we're exploring:
-
-Image Optimization: Compressing images for faster load times.
-Lazy Loading: Ensuring assets load only when necessary.
-CDN Integration: Using a Content Delivery Network (CDN) to improve speed globally.
-👩‍💻 Contributing
-Want to help make Ghar Ka Khana even better? Here's how you can contribute:
-
-Fork the repository.
-Create a new feature branch:
-bash
-Copy code
-git checkout -b feature/amazing-feature
-Commit your changes:
-bash
-Copy code
-git commit -m "Add amazing feature"
-Push the branch:
-bash
-Copy code
-git push origin feature/amazing-feature
-Open a Pull Request and let's make something awesome together! 💡
-🌟 Show Your Support
-If you love Ghar Ka Khana, please consider:
-
-⭐ Starring this repository.
-🍽️ Sharing the project with friends and family.
-📝 Leaving feedback or opening an issue.
-📧 Contact
-Feel free to reach out if you have any questions or suggestions:
-
-Purvish Sharma – LinkedIn
-Project Link: Ghar Ka Khana GitHub Repo
-📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Made with ❤️ for the love of food!
-=======
 # 🍽️ Ghar Ka Khana
 
-Welcome to **Ghar Ka Khana** — a simple yet delightful food delivery platform offering the warmth and authenticity of home-cooked meals. Our mission is to connect people with the taste of home-cooked food, bringing love and care to every bite.
+**Ghar Ka Khana** is your go-to solution for home-cooked meals delivered straight to your door! Whether you're away from home, too busy to cook, or just craving that authentic, homemade taste, we've got you covered with delicious and affordable meals that make you feel at home.
 
-🔗 [Live Demo](https://premsharma1231.github.io/Ghar-Ka-Khana/)
+🌐 **Live Website**: [Ghar Ka Khana](https://premsharma1231.github.io/Ghar-Ka-Khana/)
 
 ---
 
 ## ✨ Features
 
-- **Delicious Home-Cooked Meals**: Enjoy authentic home-style cooking prepared with fresh ingredients.
-- **User-Friendly Design**: Easy to navigate and pleasant to explore, with a sleek and modern interface.
-- **Animations & Interactions**: Smooth animations and transitions make browsing a delightful experience.
-- **Responsive Design**: Fully optimized for all screen sizes—whether you're on a phone, tablet, or desktop.
-- **Fast & Secure**: Built with performance and security in mind to ensure a seamless experience.
+- 🎨 **Beautiful UI**: Clean, simple, and easy-to-navigate design.
+- 📱 **Responsive Design**: Optimized for desktops, tablets, and mobile devices.
+- 🎥 **Smooth Animations**: Subtle CSS animations for a more engaging user experience.
+- 🖼️ **Vibrant Visuals**: Attractive images to showcase the variety of food.
 
 ---
 
-## 🚀 Technologies Used
+## 🛠️ Technologies Used
 
-- **HTML5**: For building the structure of the website.
-- **CSS3**: Enhanced with responsive design and eye-catching animations.
-- **JavaScript**: Bringing the website to life with dynamic interactions.
-- **GSAP (GreenSock Animation Platform)**: Ensuring smooth and optimized animations.
-- **GitHub Pages**: Hosting the website for free with easy deployment.
+- **Frontend**: HTML, CSS, JavaScript, Bootstrap
+- **Animations**: CSS-powered animations
+- **Hosting**: GitHub Pages
 
 ---
 
-## 🎯 Purpose
-
-Our goal is to create a platform that:
-- Brings comfort food closer to people.
-- Supports local chefs and home cooks.
-- Promotes healthier and fresher meal options.
-
----
-
-## 📸 Preview
-
-### Homepage
-
-![Homepage Screenshot](https://github.com/premsharma1231/Ghar-Ka-Khana/blob/main/Screenshot%20(140).png) <!-- Add your screenshot link -->
-
----
-
-## 🛠️ Installation & Setup
-
-If you want to explore the code or run the project locally, follow these steps:
+## 🚀 How to Run Locally
 
 1. Clone the repository:
    ```bash
    git clone https://github.com/premsharma1231/Ghar-Ka-Khana.git
->>>>>>> 0e0e6e525a463832511786bea16bdc054be200f2
